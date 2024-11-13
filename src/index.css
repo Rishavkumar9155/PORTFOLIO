@@ -1,0 +1,533 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+ 
+ 
+}
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.glow-effect {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 30px rgba(255, 255, 255, 0.4);
+}
+.glow-effect2 {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+@font-face {
+  font-family: dot1;
+  src: url(./assets/dot.woff2);
+}
+
+@font-face {
+  font-family: eros;
+  src: url(./assets/eros.woff);
+}
+@font-face {
+  font-family: dot2;
+  src: url(./assets/dot2.woff2);
+}
+@font-face {
+  font-family: dot3;
+  src: url(./assets/dot3.woff2);
+}
+
+@font-face {
+  font-family: curv;
+  src: url(./assets/curv.woff2);
+}
+@font-face {
+  font-family: curv2;
+  src: url(./assets/curv2.woff2);
+}
+.background {
+  background-image: url(./assets/image2.jpg);
+  background-size: cover;      /* Ensure the image covers the entire div */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.disc {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.div2{
+  width: fit-content;
+}
+@media (max-width: 810px) {
+  .background {
+    background-image: url(./assets/rish2.jpg);
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Adjusted height for mobile view */
+    width: 100%;
+  }
+
+
+
+.box{
+  margin-top: 10%;
+}
+.containermain{
+  height: 100vh;
+}
+.bio{
+  height: 60vh;
+}
+}
+
+@media (max-width: 637px) {
+  .background {
+    background-image: url(./assets/rish2.jpg);
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 80vh; /* Adjusted height for mobile view */
+    width: 100%;
+  }
+
+  .containermain{
+    height: 80vh;
+  }
+.box h1{
+ 
+  line-height: 1;
+  
+}
+.box{
+  margin-top: 30%;
+}
+}
+
+@media (max-width: 505px) {
+  .background {
+    background-image: url(./assets/rish2.jpg);
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 60vh; /* Adjusted height for mobile view */
+    width: 100%;
+
+  }
+.containermain{
+ 
+  height: 60vh;
+}
+
+.box h1{
+ 
+  line-height: 1;
+  
+}
+.box{
+  margin-top: 30%;
+}
+
+}
+
+.dev{
+  color: yellow;
+}
+
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+  .buttons {
+    padding: 0.4em 1.2em; /* Reduce padding for smaller screens */
+    font-size: 0.9em; /* Scale font size */
+  }
+  .box h1{
+    font-size: 10vw;
+    line-height: 9vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    padding: 0.3em 1em; /* Further reduce padding */
+    font-size: 0.8em; /* Further scale font size */
+  }
+}
+
+.main{
+  perspective:500px ;
+}
+.main1{
+  perspective:5000px ;
+}
+
+
+
+
+
+.box2{
+  background-image: url("./assets/form1.jpg");
+  
+  
+}
+body {
+  margin: 0;
+  overflow:hidden;
+  /* Prevents scrollbars on the body */
+}
+
+.scroll-container {
+  position: relative;
+  z-index: 1;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Ensures video stays behind the content */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #87cd33;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+
+
+
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+li {
+  flex-shrink: 0;
+  width: clamp(500px, 60vw, 800px);
+  padding-right: 1rem;
+}
+
+header {height: 100vh}
+footer {height: 50vh}
+
+:any-link { color: #4e9815; }
+
+.df {display: flex}
+.aic {align-items: center}
+.jcc {justify-content: center}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  color: white;
+}
+
+.demo-wrapper {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.demo-gallery:not(.last) {
+  padding-bottom: 1rem;
+}
+
+.demo-text .text {
+  font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+.or{
+  color: yellow;
+text-shadow: 0 0 10px rgba(255, 255, 0, 0.8),    /* Soft yellow glow */
+             0 0 20px rgba(255, 255, 0, 0.6),    /* Medium yellow glow */
+             0 0 30px rgba(255, 255, 0, 0.4),    /* Intense yellow glow */
+             0 0 40px rgba(255, 255, 0, 0.2);  
+}
+
+@media (max-width:740px) {
+
+  .scroller{
+    height:90vh ;
+   
+
+  }
+  
+}
+
+@media(max-width:1027px){
+
+  .box h1{
+    font-size: 12vw;
+    line-height: 10vh;
+  }
+  .panel{
+    flex-direction: column-reverse ;
+    gap:5vh;
+  }
+}
+
+@media(max-width:839px){
+
+  .box h1{
+    font-size: 12vw;
+    line-height: 8vh;
+  }
+}
+
+@media(max-width:577px){
+
+  .box h1{
+    font-size: 12vw;
+    line-height: 7vh;
+  }
+}
+
+@media(max-width:510px){
+
+  .box h1{
+    font-size: 10vw;
+    line-height: 4vh;
+  }
+}
+
+
+@media(max-width:410px){
+
+  .box h1{
+    font-size: 12vw;
+    line-height: 5vh;
+  }
+}
+
+@media(max-width:766px){
+
+
+  
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 400%; /* 100% width per panel, for 4 panels */
+  height: 100vh; /* Full screen height */
+}
+
+.panel {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
+  height: 100vh;
+}
+
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: green; }
+.purple { background-color: purple; }
+.App {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 400%; /* 100% width per panel, for 4 panels */
+  height: 100vh; /* Full screen height */
+}
+
+
+
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: green; }
+.purple { background-color: purple; }
+
+/* Base styles */
+.panel {
+  max-width: 100%; /* Ensure the panel doesn't overflow the viewport */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* For screens smaller than 768px (typical tablets and mobiles) */
+
+  .bio-section,
+  .video-section {
+    /* Stack bio and video sections vertically on small screens */
+    flex-direction: column;
+    width: 100%; /* Make each section take up full width */
+  }
+
+  .bio-section {
+    margin-bottom: 20px; /* Add spacing between bio and video sections */
+  }
+
+  .video-section video {
+    width:50vh; /* Make the video fill the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 30vh;
+  }
+}
+@media (max-width: 500px) {
+  .panel {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+ 
+
+  .video-section video {
+    width:50vh; /* Make the video fill the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 140vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  
+
+  .video-section video {
+    width:50vh; /* Make the video fill the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    
+  }
+}
+
+body{
+  overflow: hidden;
+}
+@media(max-width:860px){
+  .scmain{
+    height: 80vh;
+  }
+
+  .demo-gallery{
+    height: 9vh;
+  }
+}
+
+
+@media(max-width:602px){
+  .scmain{
+    height: 60vh;
+  }
+
+  .demo-gallery{
+    height: 9vh;
+  }
+  .wrapper{
+    font-size: 12vw;
+  }
+  .fonty{
+    font-size: 5vw;
+  }
+}
+
+@media(max-width:424px){
+  .scmain{
+    height: 50vh;
+  }
+
+  .demo-gallery{
+    height: 9vh;
+  }
+  .wrapper{
+    font-size: 13vw;
+  }
+  .fonty{
+    font-size: 7vw;
+  }
+}
+
+@media(max-width:974px){
+  .blend{
+    font-size: 6vw;
+    gap:2vh;
+    margin-left: 3vh;
+  }
+}
+
+@media(max-width:542px){
+  .blend{
+    font-size: 8vw;
+    gap:1vh;
+   
+    margin-left: 3vh;
+  }
+}
+
+@media(max-width:451px){
+  .blend{
+    font-size: 9vw;
+    gap:2px;
+   
+    margin-left: 3vh;
+  }
+}
+
+
+@media(max-width:810px){
+
+
+  .box1{
+    top:0% ;
+  }
+  .box2{
+    top:33.33%
+  }
+  .box3{
+    top:66.66%
+  }
+
+
+
+
+}
